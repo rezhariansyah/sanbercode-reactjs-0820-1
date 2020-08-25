@@ -1,0 +1,74 @@
+<style>
+  .wrapper {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border: 1px solid black;
+    padding: 30px;
+    width: 50%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .form-text {
+    margin-right: 130px;
+  }
+  .form-radio {
+    margin-right: 76px;
+  }
+  .gendre {
+    display: inline-flex;
+  }
+  .text-area {
+    margin-top: 20px;
+    display: inline-flex;
+  }
+  #label-text {
+    margin-right: 98px;
+  }
+  #back {
+    text-decoration: none;
+    color: blue;
+  }
+  #back:hover {
+    text-decoration: underline;
+  }
+</style>
+<html>
+  <div class="wrapper">
+    <h1>Hubungi Kami</h1>
+    <div>
+      <b>Kantor</b> : di jalan belum jadi <br />
+      <b>Nomor Telepon</b> : 08XX-XXXX-XXXX <br />
+      <b>Email</b> : email@contoh.com <br />
+    </div>
+    <h1>Kirimkan Pesan</h1>
+    <form action="">
+      <label for="" class="form-text">Name</label>
+      <input type="text" value="" /> <br /><br />
+      <label for="" class="form-text">Email</label>
+      <input type="text" value="" /> <br /><br />
+      <div class="gendre">
+        <label for="" class="form-radio">Jenis Kelamin</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+        </div>
+      </div>
+      <br />
+      <div class="text-area">
+        <form action="">
+          <label id="label-text">Pesan Anda</label>
+          <textarea rows="4" cols="50"> </textarea>
+          <br /><br />
+        </form>
+      </div>
+      <input type="submit" value="Kirim" />
+    </form>
+    <br /><br />
+    <a id="back" href="index.html">Kembali Ke Index</a>
+  </div>
+</html>
